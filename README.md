@@ -39,6 +39,7 @@ Graphical Arch Installation medium using i3wm
 <br/>
 
 ### Build
+A pre-built `iso` file is provided [here](https://github.com/matiasvlevi/garchiso/releases)
 
 This will create an `iso` file in the build directory
 ```
