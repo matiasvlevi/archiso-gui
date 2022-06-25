@@ -1,0 +1,96 @@
+# gArchiso i3 configuration
+
+# window gaps
+gaps inner 4
+gaps outer 4
+smart_gaps on
+
+set $mod Mod4
+font pango:monospace 8
+
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+t exec xfce4-terminal
+
+# kill window
+bindsym $mod+Shift+x kill
+
+# open application menu
+bindsym $mod+d exec dmenu_run
+
+# Add focused window borders
+for_window [class="^.*"] border pixel 2 
+
+# focus: 
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+set $window-move-amount 46px
+bindsym $mod+Shift+Left move left $window-move-amount
+bindsym $mod+Shift+Down move down $window-move-amount
+bindsym $mod+Shift+Up move up $window-move-amount
+bindsym $mod+Shift+Right move right $window-move-amount
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+g layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# resize window 
+mode "resize" {
+	bindsym Left resize shrink width 100 px or 100 ppt
+	bindsym Down resize grow height 100 px or 100 ppt
+	bindsym Up resize shrink height 100 px or 100 ppt
+	bindsym Right resize grow width 100 px or 100 ppt
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
