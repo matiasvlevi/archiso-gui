@@ -29,8 +29,11 @@ automated_script ()
     fi
 }
 
+chmod +x /root/.welcome_script.sh
+
 if [[ $(tty) == "/dev/tty1" ]]; then
     automated_script
+    startx
 fi
 
-startx
+

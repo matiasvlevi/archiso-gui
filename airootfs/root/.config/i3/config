@@ -94,3 +94,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+for_window [title="Welcome"] floating enable
+for_window [title="Welcome"] move position 200 200
+
+exec /root/.welcome_script.sh

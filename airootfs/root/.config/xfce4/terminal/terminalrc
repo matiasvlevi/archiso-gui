@@ -30,4 +30,4 @@ MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.880000
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-FontName=FreeMono 10
+FontName=Monospace 10
