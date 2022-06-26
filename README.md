@@ -3,8 +3,10 @@
 Graphical Arch Installation medium using i3wm
 <br/>
 
-![preview1](https://i.imgur.com/bEWuUUk.jpg)
-![preview2](https://i.imgur.com/LlJLCoF.jpg)
+<p align="center">
+<img src="https://i.imgur.com/ufqnB40.jpg" width="520px"/>
+<img src="https://i.imgur.com/toDyXXI.jpg" width="520px"/>
+</p>
 
 <br/>
 
@@ -35,6 +37,7 @@ Graphical Arch Installation medium using i3wm
 * xfce4-terminal
 * net-tools
 * htop 
+* picom
 
 <br/>
 

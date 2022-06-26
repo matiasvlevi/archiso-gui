@@ -30,6 +30,7 @@ automated_script ()
 }
 
 chmod +x /root/.welcome_script.sh
+export GTK_THEME=Adwaita:dark
 
 if [[ $(tty) == "/dev/tty1" ]]; then
     automated_script

@@ -98,6 +98,6 @@ bindsym $mod+r mode "resize"
 exec picom
 
 for_window [title="Welcome"] floating enable
-for_window [title="Welcome"] move position 200 200
+for_window [title="Welcome"] move position center
 
 exec /root/.welcome_script.sh
