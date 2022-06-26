@@ -38,6 +38,7 @@ Graphical Arch Installation medium using i3wm
 * net-tools
 * htop 
 * picom
+* ttf-fira-code
 
 <br/>
 
