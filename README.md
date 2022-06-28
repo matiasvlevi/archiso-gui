@@ -1,4 +1,4 @@
-# gArchiso
+# Archiso-GUI
 
 Graphical Arch Installation medium using i3wm
 <br/>
