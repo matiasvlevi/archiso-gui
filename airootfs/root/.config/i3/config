@@ -82,6 +82,8 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+bindsym $mod+Shift+r reload
+
 # resize window 
 mode "resize" {
 	bindsym Left resize shrink width 100 px or 100 ppt
@@ -92,6 +94,21 @@ mode "resize" {
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
+
+bar {
+	i3bar_command i3bar --transparency
+	position top
+
+	colors {
+		background #282C3499
+		separator #00000000
+	
+		focused_workspace #1793D1 #1793D1 #282C34
+		active_workspace #282C3499 #282C3499 #FFFFFF
+		inactive_workspace #282C3499 #282C3499 #FFFFFF
+	}
+}
+
 
 bindsym $mod+r mode "resize"
 

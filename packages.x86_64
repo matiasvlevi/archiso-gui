@@ -112,7 +112,7 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
+neovim
 virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
@@ -136,3 +136,4 @@ firefox
 xfce4-terminal
 picom
 ttf-fira-code
+dkms
