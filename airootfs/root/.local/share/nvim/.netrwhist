@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/vlev'
+let g:netrw_dirhist_3='/home/vlev/.config'
+let g:netrw_dirhist_2='/home/vlev/.config/i3'
+let g:netrw_dirhist_1='/home/vlev/.config'
+let g:netrw_dirhist_0='/home/vlev'
+let g:netrw_dirhist_9='/home/vlev/.npm'
+let g:netrw_dirhist_8='/home/vlev'
+let g:netrw_dirhist_7='/home/vlev/.config/i3'
+let g:netrw_dirhist_6='/home/vlev/.config'
+let g:netrw_dirhist_5='/home/vlev'

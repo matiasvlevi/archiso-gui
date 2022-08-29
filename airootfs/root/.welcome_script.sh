@@ -1,1 +1,0 @@
-xfce4-terminal -e "zsh -c 'cat ~/.welcome; zsh'" -T "Welcome"

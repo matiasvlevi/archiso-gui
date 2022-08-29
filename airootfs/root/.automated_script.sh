@@ -29,11 +29,25 @@ automated_script ()
     fi
 }
 
-chmod +x /root/.welcome_script.sh
-export GTK_THEME=Adwaita:dark
+sudo systemctl start NetworkManager.service
+
+THIRD_PART=$(blkid | grep "STORAGE" | grep -oP '(?<=PARTUUID\=\").*(?=\")')
+if [[ $(blkid | grep "STORAGE") ]]; then
+ mkdir /run/archiso/storage
+ mount PARTUUID=$THIRD_PART /run/archiso/storage;
+else
+ echo "No storage partition found";
+fi
+
+mount -o remount,size=4G /run/archiso/cowspace
+
+chmod +x /root/.scripts/.welcome_script.sh
+chmod +x /root/.scripts/shutdown-menu.sh
+chmod +x /root/.scripts/display-swap.sh
 
 if [[ $(tty) == "/dev/tty1" ]]; then
     automated_script
+
     startx
 fi
 

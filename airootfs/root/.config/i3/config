@@ -1,12 +1,12 @@
 # gArchiso i3 configuration
 
 # window gaps
-gaps inner 4
-gaps outer 2
+gaps inner 1
+gaps outer 1
 smart_gaps on
 
 set $mod Mod4
-font pango:monospace 8
+font pango:Hack 11
 
 floating_modifier $mod
 
@@ -16,11 +16,8 @@ bindsym $mod+t exec xfce4-terminal
 # kill window
 bindsym $mod+Shift+x kill
 
-# open application menu
-bindsym $mod+d exec dmenu_run
-
 # Add focused window borders
-for_window [class="^.*"] border pixel 2 
+for_window [class="^.*"] border pixel 4
 
 # focus: 
 bindsym $mod+Left focus left
@@ -95,20 +92,35 @@ mode "resize" {
 	bindsym Escape mode "default"
 }
 
+
+# class                 border  bground text    indicator child_border
+client.focused          #56B6C2 #56B6C2 #282c34 #2E9EF4   #56B6C2
+client.focused_inactive #4B5263 #4B5263 #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #808080 #292D2E   #222222
+client.urgent           #2F343A #BE5046 #FFFFFF #BE5046   #BE5046
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
 bar {
 	i3bar_command i3bar --transparency
 	position top
 
 	colors {
-		background #282C3499
-		separator #00000000
+		background #282C34
+		statusline #000000
+		separator  #282C34
 	
-		focused_workspace #1793D1 #1793D1 #282C34
-		active_workspace #282C3499 #282C3499 #FFFFFF
-		inactive_workspace #282C3499 #282C3499 #FFFFFF
+		focused_workspace  #56B6C2 #56B6C2 #282C34
+		active_workspace   #222222 #222222 #FFFFFF
+		inactive_workspace #222222 #222222 #ABB2BF
+		urgent_workspace   #BE5046 #BE5046 #FFFFFF
+		binding_mode       #BE5046 #BE5046 #FFFFFF
 	}
 }
 
+bindsym $mod+d exec --no-startup-id dmenu_run -nb '#282C34' -sf '#282C34' -sb '#56B6C2' -nf '#56B6C2' -p 'Search' -l 6 -fn 'Hack-11:style=Regular'
+bindsym $mod+Tab exec ~/.scripts/shutdown-menu.sh
 
 bindsym $mod+r mode "resize"
 
@@ -117,4 +129,4 @@ exec picom
 for_window [title="Welcome"] floating enable
 for_window [title="Welcome"] move position center
 
-exec /root/.welcome_script.sh
+exec /root/.scripts/.welcome_script.sh

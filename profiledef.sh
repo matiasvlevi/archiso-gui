@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="garchlinux"
-iso_label="gARCH_$(date +%Y%m)"
-iso_publisher="gArch Linux <https://archlinux.org>"
-iso_application="gArch Linux Live/Rescue CD"
+iso_name="gartiso"
+iso_label="GART_$(date +%Y%m)"
+iso_publisher="Matias Vazquez-Levi <https://dannjs.org>"
+iso_application="GART Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')

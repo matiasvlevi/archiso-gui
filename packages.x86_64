@@ -122,6 +122,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+networkmanager
 neofetch
 net-tools
 git
@@ -135,4 +136,11 @@ dmenu
 firefox
 xfce4-terminal
 picom
-ttf-fira-code
+ttf-hack
+ddrescue
+wireshark-cli
+ffmpeg
+tree
+speedtest-cli
+base-devel
+unzip
