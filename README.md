@@ -1,4 +1,4 @@
-# Archiso-GUI
+# Graphical Arch Repair Tool (G.A.R.T)
 
 Graphical Arch Installation medium using i3wm
 <br/>
@@ -25,20 +25,28 @@ Graphical Arch Installation medium using i3wm
 
 ##### The following packages were added
 
+* networkmanager
 * neofetch
+* net-tools
 * git
+* htop
 * feh
 * i3
 * xorg-server
 * xorg-xinit
-* dmenu
 * xterm
+* dmenu
 * firefox
 * xfce4-terminal
-* net-tools
-* htop 
 * picom
-* ttf-fira-code
+* ttf-hack
+* ddrescue
+* wireshark-cli
+* ffmpeg
+* tree
+* speedtest-cli
+* base-devel
+* unzip
 
 <br/>
 
@@ -52,3 +60,15 @@ mkarchiso -v -w ./ -o ./build ./
 for more information see the [Arch wiki](https://wiki.archlinux.org/title/archiso)'s page on the archiso
 
 You can also find a prebuilt `iso` file in the releases
+
+### Adding a persistent storage partition
+
+specify your archiso device
+
+```
+source ./make_storage.sh /dev/sdX
+```
+
+this will create a partition that will be mounted in `/run/archiso/storage` once the archiso boots up.
+
+4G of cowspace is also mounted to allow for other packages to be installed.
