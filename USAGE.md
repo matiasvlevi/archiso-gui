@@ -6,6 +6,13 @@
 
 (`super` key is the `win` key on most keyboards)
 
+
+<br/>
+
+<br/>
+
+<br/>
+
 ### Wipe a drive
 
 Scan disks with lsblk
@@ -22,7 +29,11 @@ replace `sdX` with the desired device
 wipefs -a /dev/sdX
 ```
 
-<br/><br/><br/>
+<br/>
+
+<br/>
+
+<br/>
 
 
 
@@ -41,7 +52,11 @@ arch-chroot /mnt
 ```
 
 
-<br/><br/><br/>
+<br/>
+
+<br/>
+
+<br/>
 
 ### List connected devices (Hardware level)
 
@@ -50,7 +65,11 @@ lspci
 ```
 
 
-<br/><br/><br/>
+<br/>
+
+<br/>
+
+<br/>
 
 ### Shutdown utils
 
@@ -66,7 +85,11 @@ reboot
 
 or use the `super + tab` macro to open a shutdown menu
 
-<br/><br/><br/>
+<br/>
+
+<br/>
+
+<br/>
 
 ### Scan network
 
@@ -75,5 +98,8 @@ You can scan a network by providing an IP and a Range
 ```
 nmap X.X.X.X/X
 ```
+<br/>
 
-<br/><br/><br/>
+<br/>
+
+<br/>
