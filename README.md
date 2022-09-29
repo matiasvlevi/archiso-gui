@@ -10,6 +10,8 @@ Graphical Arch Installation medium using i3wm
 
 <br/>
 
+Usage docs are provided [here](./USAGE.md)
+
 ### i3wm Macros
 
 | Macro                  | Function                       |
