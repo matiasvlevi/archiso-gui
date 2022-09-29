@@ -1,5 +1,11 @@
 # Common Usage Docs
 
+### Launch apps
+
+`super + d` macro opens up an application menu
+
+(`super` key is the `win` key on most keyboards)
+
 ### Wipe a drive
 
 Scan disks with lsblk
