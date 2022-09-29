@@ -1,6 +1,14 @@
 # Graphical Arch Repair Tool (G.A.R.T)
 
+<br/>
+
 Graphical Arch Installation medium using i3wm
+
+<br/>
+
+
+### Usage docs are provided [here](./USAGE.md)
+
 <br/>
 
 <p align="center">
