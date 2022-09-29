@@ -1,7 +1,14 @@
 # Archiso-GUI
 
-Graphical Arch Installation medium using i3wm
+
 <br/>
+
+Graphical Arch Installation medium using i3wm
+
+<br/>
+
+
+### Usage docs are provided [here](./USAGE.md)
 
 <p align="center">
 <img src="https://i.imgur.com/ufqnB40.jpg" width="520px"/>
@@ -9,8 +16,6 @@ Graphical Arch Installation medium using i3wm
 </p>
 
 <br/>
-
-Usage docs are provided [here](./USAGE.md)
 
 ### i3wm Macros
 
