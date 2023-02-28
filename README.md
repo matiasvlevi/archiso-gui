@@ -4,6 +4,8 @@
 
 Graphical Arch Installation medium using i3wm
 
+This image is used in IT & Networking classes at College Montmorency, as an alternative to the previously thought `Hiren's Boot` 
+
 <br/>
 
 
